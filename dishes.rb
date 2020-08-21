@@ -12,7 +12,7 @@ def app_menu
   when 1
     display_menu
   when 2
-puts "order"
+    order
   when 3
     exit
   else

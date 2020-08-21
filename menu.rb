@@ -29,7 +29,6 @@ attr_accessor :food, :price
 
 end
 
-# @collection = [{Dish.new=>(chicken,10.99)}]
 @main_dishes = [ Dish.new( 'chicken', 10.99), Dish.new('pasta', 9.99), Dish.new( 'curry', 14.99),]
 @side_dishes = [ Dish.new('rice', 4.99), Dish.new('french_fries', 3.99), Dish.new('hush_puppies', 5.99)]
   
@@ -58,8 +57,8 @@ end
 end
 
 def read_side_dishes
-  side_dish = "#{@side_dishes [1,2]}"
-@side_dishes.each_with_index do |side_dish, index|
+  side_dish = "#{@side_dishes[1,2]}"
+  @side_dishes.each_with_index do |side_dish, index|
 puts "side dish # #{index+1}) #{side_dish.food} price = #{side_dish.price}"
 end
 end
@@ -78,30 +77,24 @@ def display_menu
   puts '*' * 10
 end
 
+def grab_main_dish
+
+end
 
 
 
-# puts @collection
-# class Resturaunt 
-
-#   attr_accessor :main_dishes, :side_dishes
-
-# def initialize (main, side)
-#   @main_dishes = main
-#   @side_dishes = side
-
-# end
-  
-#   end
-  
-
-# end
+def order
+puts "what would you like to order?"
+puts "Main (pick one)"
+puts '*' * 10
+read_dishes
+puts "enter the number corresponding to your dish of choice"
+# function that lets you enter a number relating to the correspronding menu item, then calls it-- variable?
+item_number = gets.chomp
+main_dish = "#{@main_dishes}"
+  @main_dishes.each do |main_dish, index|
+  puts "you have chosen #{main_dish.item_number}"
+  end
 
 
-
-#total = reciept class
-# def total = add up price..value?
-
-
-
-# menu class prints out  the data from a hash array containing data ('dish', price) 
+end
