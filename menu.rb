@@ -90,7 +90,7 @@ puts '*' * 10
 read_dishes
 puts "enter the number corresponding to your dish of choice"
 # function that lets you enter a number relating to the correspronding menu item, then calls it-- variable?
-item_number = gets.chomp
+item_number +1 = gets.chomp
 main_dish = "#{@main_dishes}"
   @main_dishes.each do |main_dish, index|
   puts "you have chosen #{main_dish.item_number}"
